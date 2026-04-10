@@ -134,7 +134,7 @@ const SlotReservationSystem = () => {
     setTimeout(() => setShowNotification(false), 5000);
   };
 
-  // Validation functions
+  // Validation functions adding
   const validateName = (name) => {
     if (!name) return 'Student name is required';
     if (name.length < 3) return 'Name must be at least 3 characters';
