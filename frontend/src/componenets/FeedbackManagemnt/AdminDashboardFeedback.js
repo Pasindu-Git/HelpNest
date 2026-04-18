@@ -79,6 +79,7 @@ const AdminFeedbackManagement = () => {
     loadStatistics();
   }, []);
 
+  //gets feedback data from backend
   const loadFeedbacks = async () => {
     try {
       setLoading(true);
@@ -87,6 +88,7 @@ const AdminFeedbackManagement = () => {
       const data = await response.json();
       setFeedbacks(data);
       
+      //get all feedbacks for report
       const allResponse = await fetch(`${API_BASE_URL}/all`);
       if (allResponse.ok) {
         const allData = await allResponse.json();
