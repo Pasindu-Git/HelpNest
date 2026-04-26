@@ -1,0 +1,215 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: canteen-management\canteen.spec.js >> Canteen Management >> should display food categories
+- Location: tests\canteen-management\canteen.spec.js:11:7
+
+# Error details
+
+```
+TimeoutError: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[data-testid="category-button"]') to be visible
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e6]:
+        - link "Campus Portal Student Hub" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img [ref=e9]
+          - generic [ref=e13]:
+            - heading "Campus Portal" [level=1] [ref=e14]
+            - paragraph [ref=e15]: Student Hub
+        - generic [ref=e16]:
+          - link "Home" [ref=e17] [cursor=pointer]:
+            - /url: /
+            - img [ref=e18]
+            - text: Home
+          - link "About Us" [ref=e21] [cursor=pointer]:
+            - /url: /about
+            - img [ref=e22]
+            - text: About Us
+          - link "Study Sessions" [ref=e26] [cursor=pointer]:
+            - /url: /student-sessions
+            - img [ref=e27]
+            - text: Study Sessions
+          - link "Slot Reservations" [ref=e30] [cursor=pointer]:
+            - /url: /slot-reservation
+            - img [ref=e31]
+            - text: Slot Reservations
+          - link "Smart Canteen" [ref=e36] [cursor=pointer]:
+            - /url: /student-canteen
+            - img [ref=e37]
+            - text: Smart Canteen
+          - link "Feedback" [ref=e42] [cursor=pointer]:
+            - /url: /feedbacks
+            - img [ref=e43]
+            - text: Feedback
+        - generic [ref=e46]:
+          - link "Login" [ref=e47] [cursor=pointer]:
+            - /url: /student-login
+            - img [ref=e48]
+            - text: Login
+          - link "Register" [ref=e52] [cursor=pointer]:
+            - /url: /student-register
+            - img [ref=e53]
+            - text: Register
+    - generic [ref=e58]:
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - img [ref=e64]
+          - generic [ref=e68]:
+            - heading "Campus Canteen" [level=1] [ref=e69]
+            - paragraph [ref=e70]: Order delicious meals from your favorite canteen
+        - generic [ref=e71]:
+          - button "Cart" [ref=e72] [cursor=pointer]:
+            - img [ref=e73]
+            - generic [ref=e77]: Cart
+          - button [ref=e78] [cursor=pointer]:
+            - img [ref=e79]
+      - generic [ref=e84]:
+        - generic [ref=e85]:
+          - button "All Items" [ref=e86] [cursor=pointer]:
+            - img [ref=e87]
+            - generic [ref=e91]: All Items
+          - button "Main Course" [ref=e92] [cursor=pointer]:
+            - img [ref=e93]
+            - generic [ref=e99]: Main Course
+          - button "Snacks" [ref=e100] [cursor=pointer]:
+            - img [ref=e101]
+            - generic [ref=e107]: Snacks
+          - button "Beverages" [ref=e108] [cursor=pointer]:
+            - img [ref=e109]
+            - generic [ref=e114]: Beverages
+          - button "Desserts" [ref=e115] [cursor=pointer]:
+            - img [ref=e116]
+            - generic [ref=e120]: Desserts
+          - button "Healthy" [ref=e121] [cursor=pointer]:
+            - img [ref=e122]
+            - generic [ref=e125]: Healthy
+        - generic [ref=e126]:
+          - img [ref=e127]
+          - textbox "Search for food items..." [ref=e130]
+        - generic [ref=e131]:
+          - img [ref=e132]
+          - paragraph [ref=e136]: No items found
+  - contentinfo [ref=e137]:
+    - generic [ref=e138]:
+      - generic [ref=e139]:
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - img [ref=e143]
+            - generic [ref=e147]:
+              - heading "Campus Portal" [level=3] [ref=e148]
+              - paragraph [ref=e149]: Student Hub
+          - paragraph [ref=e150]: Your one-stop digital platform for managing study sessions, seat reservations, canteen orders, and feedback. Empowering students to excel in their academic journey.
+          - generic [ref=e151]:
+            - link [ref=e152] [cursor=pointer]:
+              - /url: https://facebook.com
+              - img [ref=e153]
+            - link [ref=e155] [cursor=pointer]:
+              - /url: https://twitter.com
+              - img [ref=e156]
+            - link [ref=e158] [cursor=pointer]:
+              - /url: https://instagram.com
+              - img [ref=e159]
+            - link [ref=e163] [cursor=pointer]:
+              - /url: https://linkedin.com
+              - img [ref=e164]
+            - link [ref=e168] [cursor=pointer]:
+              - /url: https://github.com
+              - img [ref=e169]
+        - generic [ref=e172]:
+          - heading "Quick Links" [level=3] [ref=e173]:
+            - img [ref=e174]
+            - text: Quick Links
+          - list [ref=e176]:
+            - listitem [ref=e177]:
+              - link "Home" [ref=e178] [cursor=pointer]:
+                - /url: /
+                - img [ref=e179]
+                - text: Home
+            - listitem [ref=e182]:
+              - link "About Us" [ref=e183] [cursor=pointer]:
+                - /url: /about
+                - img [ref=e184]
+                - text: About Us
+            - listitem [ref=e188]:
+              - link "Study Sessions" [ref=e189] [cursor=pointer]:
+                - /url: /student-registered-sessions
+                - img [ref=e190]
+                - text: Study Sessions
+            - listitem [ref=e193]:
+              - link "Slot Reservations" [ref=e194] [cursor=pointer]:
+                - /url: /slot-reservation
+                - img [ref=e195]
+                - text: Slot Reservations
+            - listitem [ref=e200]:
+              - link "Smart Canteen" [ref=e201] [cursor=pointer]:
+                - /url: /student-canteen
+                - img [ref=e202]
+                - text: Smart Canteen
+            - listitem [ref=e207]:
+              - link "Feedback" [ref=e208] [cursor=pointer]:
+                - /url: /feedbacks
+                - img [ref=e209]
+                - text: Feedback
+        - generic [ref=e211]:
+          - heading "Get in Touch" [level=3] [ref=e212]:
+            - img [ref=e213]
+            - text: Get in Touch
+          - list [ref=e215]:
+            - listitem [ref=e216]:
+              - img [ref=e217]
+              - generic [ref=e220]: 123 Campus Road, Colombo 07, Sri Lanka
+            - listitem [ref=e221]:
+              - img [ref=e222]
+              - link "support@campusportal.com" [ref=e225] [cursor=pointer]:
+                - /url: mailto:support@campusportal.com
+            - listitem [ref=e226]:
+              - img [ref=e227]
+              - link "+94 11 234 5678" [ref=e229] [cursor=pointer]:
+                - /url: tel:+94123456789
+            - listitem [ref=e230]:
+              - img [ref=e231]
+              - generic [ref=e234]: "Mon - Fri: 8:00 AM - 6:00 PM"
+      - generic [ref=e236]:
+        - generic [ref=e237]:
+          - heading "Stay Updated" [level=3] [ref=e238]:
+            - img [ref=e239]
+            - text: Stay Updated
+          - paragraph [ref=e244]: Subscribe to our newsletter for updates on new sessions, events, and campus news.
+        - generic [ref=e245]:
+          - textbox "Enter your email" [ref=e246]
+          - button "Subscribe" [ref=e247] [cursor=pointer]
+      - generic [ref=e249]:
+        - generic [ref=e250]:
+          - generic [ref=e251]: © 2026 Campus Portal. All rights reserved.
+          - generic [ref=e252]: •
+          - link "Privacy Policy" [ref=e253] [cursor=pointer]:
+            - /url: /privacy
+          - generic [ref=e254]: •
+          - link "Terms of Service" [ref=e255] [cursor=pointer]:
+            - /url: /terms
+          - generic [ref=e256]: •
+          - link "Sitemap" [ref=e257] [cursor=pointer]:
+            - /url: /sitemap
+        - generic [ref=e258]:
+          - generic [ref=e259]: Made with
+          - img [ref=e260]
+          - generic [ref=e262]: for students
+        - button "Back to Top" [ref=e263] [cursor=pointer]:
+          - img [ref=e264]
+          - text: Back to Top
+```

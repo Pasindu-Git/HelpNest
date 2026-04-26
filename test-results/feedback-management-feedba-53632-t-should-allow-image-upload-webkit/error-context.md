@@ -1,0 +1,280 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: feedback-management\feedback.spec.js >> Feedback Management >> should allow image upload
+- Location: tests\feedback-management\feedback.spec.js:97:7
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('[data-testid="category-card"]').first()
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e6]:
+        - link "Campus Portal Student Hub" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img [ref=e9]
+          - generic [ref=e12]:
+            - heading "Campus Portal" [level=1] [ref=e13]
+            - paragraph [ref=e14]: Student Hub
+        - generic [ref=e15]:
+          - link "Home" [ref=e16]:
+            - /url: /
+            - img [ref=e17]
+            - text: Home
+          - link "About Us" [ref=e20]:
+            - /url: /about
+            - img [ref=e21]
+            - text: About Us
+          - link "Study Sessions" [ref=e23]:
+            - /url: /student-sessions
+            - img [ref=e24]
+            - text: Study Sessions
+          - link "Slot Reservations" [ref=e26]:
+            - /url: /slot-reservation
+            - img [ref=e27]
+            - text: Slot Reservations
+          - link "Smart Canteen" [ref=e30]:
+            - /url: /student-canteen
+            - img [ref=e31]
+            - text: Smart Canteen
+          - link "Feedback" [ref=e33]:
+            - /url: /feedbacks
+            - img [ref=e34]
+            - text: Feedback
+        - generic [ref=e37]:
+          - link "Login" [ref=e38]:
+            - /url: /student-login
+            - img [ref=e39]
+            - text: Login
+          - link "Register" [ref=e42]:
+            - /url: /student-register
+            - img [ref=e43]
+            - text: Register
+    - generic [ref=e46]:
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - img [ref=e53]
+            - heading "Student Feedback Hub" [level=1] [ref=e55]
+          - paragraph [ref=e56]: Share your thoughts, report issues, and help us build a better campus experience
+        - generic [ref=e57]:
+          - img [ref=e58]
+          - generic [ref=e60]: 0 feedbacks shared
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - generic [ref=e65]:
+              - heading "Categorized Problems" [level=2] [ref=e66]:
+                - img [ref=e67]
+                - text: Categorized Problems
+              - paragraph [ref=e69]: Select a category to share feedback
+            - generic [ref=e70]:
+              - button "Academic Courses, curriculum, teaching quality, exams" [ref=e71] [cursor=pointer]:
+                - generic [ref=e72]:
+                  - img [ref=e74]
+                  - generic [ref=e76]:
+                    - generic [ref=e77]:
+                      - text: Academic
+                      - img [ref=e78]
+                    - paragraph [ref=e80]: Courses, curriculum, teaching quality, exams
+              - button "Infrastructure Classrooms, labs, library, buildings" [ref=e81] [cursor=pointer]:
+                - generic [ref=e82]:
+                  - img [ref=e84]
+                  - generic [ref=e89]:
+                    - generic [ref=e90]:
+                      - text: Infrastructure
+                      - img [ref=e91]
+                    - paragraph [ref=e93]: Classrooms, labs, library, buildings
+              - button "Technology WiFi, portal, digital tools" [ref=e94] [cursor=pointer]:
+                - generic [ref=e95]:
+                  - img [ref=e97]
+                  - generic [ref=e101]:
+                    - generic [ref=e102]:
+                      - text: Technology
+                      - img [ref=e103]
+                    - paragraph [ref=e105]: WiFi, portal, digital tools
+              - button "Campus Facilities Cafeteria, hostel, transport, sports" [ref=e106] [cursor=pointer]:
+                - generic [ref=e107]:
+                  - img [ref=e109]
+                  - generic [ref=e111]:
+                    - generic [ref=e112]:
+                      - text: Campus Facilities
+                      - img [ref=e113]
+                    - paragraph [ref=e115]: Cafeteria, hostel, transport, sports
+              - button "Administration Staff, processes, support services" [ref=e116] [cursor=pointer]:
+                - generic [ref=e117]:
+                  - img [ref=e119]
+                  - generic [ref=e122]:
+                    - generic [ref=e123]:
+                      - text: Administration
+                      - img [ref=e124]
+                    - paragraph [ref=e126]: Staff, processes, support services
+              - button "Student Life Events, clubs, mental health, culture" [ref=e127] [cursor=pointer]:
+                - generic [ref=e128]:
+                  - img [ref=e130]
+                  - generic [ref=e132]:
+                    - generic [ref=e133]:
+                      - text: Student Life
+                      - img [ref=e134]
+                    - paragraph [ref=e136]: Events, clubs, mental health, culture
+          - generic [ref=e137]:
+            - generic [ref=e138]:
+              - img [ref=e139]
+              - heading "Impact Tracker" [level=4] [ref=e141]
+            - generic [ref=e142]:
+              - generic [ref=e143]:
+                - paragraph [ref=e144]: "0"
+                - paragraph [ref=e145]: Total Feedbacks
+              - generic [ref=e146]:
+                - paragraph [ref=e147]: "0"
+                - paragraph [ref=e148]: Total Likes
+              - generic [ref=e149]:
+                - paragraph [ref=e150]: "0"
+                - paragraph [ref=e151]: Pending Issues
+              - generic [ref=e152]:
+                - paragraph [ref=e153]: "0"
+                - paragraph [ref=e154]: Resolved
+        - generic [ref=e155]:
+          - generic [ref=e156]:
+            - generic [ref=e158]:
+              - heading "Recent Feedback" [level=2] [ref=e159]:
+                - img [ref=e160]
+                - text: Recent Feedback
+              - paragraph [ref=e162]: See what students are saying
+            - generic [ref=e164]:
+              - img [ref=e166]
+              - paragraph [ref=e168]: No feedback yet in this category
+              - paragraph [ref=e169]: Be the first to share your thoughts!
+          - generic [ref=e171]:
+            - img [ref=e173]
+            - generic [ref=e175]:
+              - paragraph [ref=e176]: Your voice matters!
+              - paragraph [ref=e177]: All feedback is reviewed by the student affairs committee. Constructive suggestions help improve campus life for everyone.
+  - contentinfo [ref=e178]:
+    - generic [ref=e179]:
+      - generic [ref=e180]:
+        - generic [ref=e181]:
+          - generic [ref=e182]:
+            - img [ref=e184]
+            - generic [ref=e187]:
+              - heading "Campus Portal" [level=3] [ref=e188]
+              - paragraph [ref=e189]: Student Hub
+          - paragraph [ref=e190]: Your one-stop digital platform for managing study sessions, seat reservations, canteen orders, and feedback. Empowering students to excel in their academic journey.
+          - generic [ref=e191]:
+            - link [ref=e192]:
+              - /url: https://facebook.com
+              - img [ref=e193]
+            - link [ref=e195]:
+              - /url: https://twitter.com
+              - img [ref=e196]
+            - link [ref=e198]:
+              - /url: https://instagram.com
+              - img [ref=e199]
+            - link [ref=e202]:
+              - /url: https://linkedin.com
+              - img [ref=e203]
+            - link [ref=e207]:
+              - /url: https://github.com
+              - img [ref=e208]
+        - generic [ref=e211]:
+          - heading "Quick Links" [level=3] [ref=e212]:
+            - img [ref=e213]
+            - text: Quick Links
+          - list [ref=e215]:
+            - listitem [ref=e216]:
+              - link "Home" [ref=e217]:
+                - /url: /
+                - img [ref=e218]
+                - text: Home
+            - listitem [ref=e221]:
+              - link "About Us" [ref=e222]:
+                - /url: /about
+                - img [ref=e223]
+                - text: About Us
+            - listitem [ref=e225]:
+              - link "Study Sessions" [ref=e226]:
+                - /url: /student-registered-sessions
+                - img [ref=e227]
+                - text: Study Sessions
+            - listitem [ref=e229]:
+              - link "Slot Reservations" [ref=e230]:
+                - /url: /slot-reservation
+                - img [ref=e231]
+                - text: Slot Reservations
+            - listitem [ref=e234]:
+              - link "Smart Canteen" [ref=e235]:
+                - /url: /student-canteen
+                - img [ref=e236]
+                - text: Smart Canteen
+            - listitem [ref=e238]:
+              - link "Feedback" [ref=e239]:
+                - /url: /feedbacks
+                - img [ref=e240]
+                - text: Feedback
+        - generic [ref=e242]:
+          - heading "Get in Touch" [level=3] [ref=e243]:
+            - img [ref=e244]
+            - text: Get in Touch
+          - list [ref=e246]:
+            - listitem [ref=e247]:
+              - img [ref=e248]
+              - generic [ref=e251]: 123 Campus Road, Colombo 07, Sri Lanka
+            - listitem [ref=e252]:
+              - img [ref=e253]
+              - link "support@campusportal.com" [ref=e256]:
+                - /url: mailto:support@campusportal.com
+            - listitem [ref=e257]:
+              - img [ref=e258]
+              - link "+94 11 234 5678" [ref=e260]:
+                - /url: tel:+94123456789
+            - listitem [ref=e261]:
+              - img [ref=e262]
+              - generic [ref=e265]: "Mon - Fri: 8:00 AM - 6:00 PM"
+      - generic [ref=e267]:
+        - generic [ref=e268]:
+          - heading "Stay Updated" [level=3] [ref=e269]:
+            - img [ref=e270]
+            - text: Stay Updated
+          - paragraph [ref=e273]: Subscribe to our newsletter for updates on new sessions, events, and campus news.
+        - generic [ref=e274]:
+          - textbox "Enter your email" [ref=e275]
+          - button "Subscribe" [ref=e276] [cursor=pointer]
+      - generic [ref=e278]:
+        - generic [ref=e279]:
+          - generic [ref=e280]: © 2026 Campus Portal. All rights reserved.
+          - generic [ref=e281]: •
+          - link "Privacy Policy" [ref=e282]:
+            - /url: /privacy
+          - generic [ref=e283]: •
+          - link "Terms of Service" [ref=e284]:
+            - /url: /terms
+          - generic [ref=e285]: •
+          - link "Sitemap" [ref=e286]:
+            - /url: /sitemap
+        - generic [ref=e287]:
+          - generic [ref=e288]: Made with
+          - img [ref=e289]
+          - generic [ref=e291]: for students
+        - button "Back to Top" [ref=e292] [cursor=pointer]:
+          - img [ref=e293]
+          - text: Back to Top
+```

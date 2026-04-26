@@ -1,0 +1,407 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: canteen-management\basic.spec.js >> get started link
+- Location: tests\canteen-management\basic.spec.js:10:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for getByRole('link', { name: 'Learn React' })
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e6]:
+        - link "Campus Portal Student Hub" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img [ref=e9]
+          - generic [ref=e12]:
+            - heading "Campus Portal" [level=1] [ref=e13]
+            - paragraph [ref=e14]: Student Hub
+        - generic [ref=e15]:
+          - link "Home" [ref=e16] [cursor=pointer]:
+            - /url: /
+            - img [ref=e17]
+            - text: Home
+          - link "About Us" [ref=e20] [cursor=pointer]:
+            - /url: /about
+            - img [ref=e21]
+            - text: About Us
+          - link "Study Sessions" [ref=e23] [cursor=pointer]:
+            - /url: /student-sessions
+            - img [ref=e24]
+            - text: Study Sessions
+          - link "Slot Reservations" [ref=e26] [cursor=pointer]:
+            - /url: /slot-reservation
+            - img [ref=e27]
+            - text: Slot Reservations
+          - link "Smart Canteen" [ref=e30] [cursor=pointer]:
+            - /url: /student-canteen
+            - img [ref=e31]
+            - text: Smart Canteen
+          - link "Feedback" [ref=e33] [cursor=pointer]:
+            - /url: /feedbacks
+            - img [ref=e34]
+            - text: Feedback
+        - generic [ref=e37]:
+          - link "Login" [ref=e38] [cursor=pointer]:
+            - /url: /student-login
+            - img [ref=e39]
+            - text: Login
+          - link "Register" [ref=e42] [cursor=pointer]:
+            - /url: /student-register
+            - img [ref=e43]
+            - text: Register
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - img "Welcome to Campus Portal" [ref=e50]
+          - generic [ref=e53]:
+            - generic [ref=e54]:
+              - img [ref=e55]
+              - generic [ref=e58]: Your Digital Campus Hub
+            - heading "Welcome to Campus Portal" [level=1] [ref=e59]
+            - paragraph [ref=e60]: Access study sessions, reserve seats, order food, and manage your academic life all in one place.
+            - link "Explore Now" [ref=e61] [cursor=pointer]:
+              - /url: /student-dashboard
+              - text: Explore Now
+              - img [ref=e62]
+        - generic [ref=e64]:
+          - img "Study Smarter Together" [ref=e66]
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - img [ref=e71]
+              - generic [ref=e74]: Join Study Sessions
+            - heading "Study Smarter Together" [level=1] [ref=e75]
+            - paragraph [ref=e76]: Collaborate with peers, attend workshops, and enhance your learning experience with our study groups.
+            - link "Find Sessions" [ref=e77] [cursor=pointer]:
+              - /url: /student-registered-sessions
+              - text: Find Sessions
+              - img [ref=e78]
+        - generic [ref=e80]:
+          - img "Reserve Your Perfect Spot" [ref=e82]
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - img [ref=e87]
+              - generic [ref=e90]: Smart Seat Booking
+            - heading "Reserve Your Perfect Spot" [level=1] [ref=e91]
+            - paragraph [ref=e92]: Book study spaces across campus in advance. Never worry about finding a place to study again.
+            - link "Book Now" [ref=e93] [cursor=pointer]:
+              - /url: /slot-reservation
+              - text: Book Now
+              - img [ref=e94]
+        - generic [ref=e96]:
+          - img "Delicious Meals, Fast Service" [ref=e98]
+          - generic [ref=e101]:
+            - generic [ref=e102]:
+              - img [ref=e103]
+              - generic [ref=e106]: Smart Canteen
+            - heading "Delicious Meals, Fast Service" [level=1] [ref=e107]
+            - paragraph [ref=e108]: Order your favorite meals from campus canteens with our easy-to-use ordering system.
+            - link "Order Food" [ref=e109] [cursor=pointer]:
+              - /url: /student-canteen
+              - text: Order Food
+              - img [ref=e110]
+        - generic [ref=e112]:
+          - img "Your Voice Matters" [ref=e114]
+          - generic [ref=e117]:
+            - generic [ref=e118]:
+              - img [ref=e119]
+              - generic [ref=e122]: Share Feedback
+            - heading "Your Voice Matters" [level=1] [ref=e123]
+            - paragraph [ref=e124]: Help us improve campus facilities by sharing your thoughts and suggestions.
+            - link "Give Feedback" [ref=e125] [cursor=pointer]:
+              - /url: /feedbacks
+              - text: Give Feedback
+              - img [ref=e126]
+        - button [ref=e128] [cursor=pointer]:
+          - img [ref=e129]
+        - button [ref=e131] [cursor=pointer]:
+          - img [ref=e132]
+        - generic [ref=e134]:
+          - button [ref=e135] [cursor=pointer]
+          - button [ref=e136] [cursor=pointer]
+          - button [ref=e137] [cursor=pointer]
+          - button [ref=e138] [cursor=pointer]
+          - button [ref=e139] [cursor=pointer]
+        - button [ref=e140] [cursor=pointer]:
+          - img [ref=e141]
+      - generic [ref=e144]:
+        - generic [ref=e145]:
+          - generic [ref=e146]:
+            - img [ref=e147]
+            - generic [ref=e150]: What We Offer
+          - heading "Everything You Need in One Place" [level=2] [ref=e151]
+          - paragraph [ref=e152]: Comprehensive solutions designed to enhance every aspect of student life
+        - generic [ref=e153]:
+          - link "Study Sessions Join collaborative study groups and workshops led by experienced peers. Learn more" [ref=e154] [cursor=pointer]:
+            - /url: /student-registered-sessions
+            - img [ref=e156]
+            - heading "Study Sessions" [level=3] [ref=e158]
+            - paragraph [ref=e159]: Join collaborative study groups and workshops led by experienced peers.
+            - generic [ref=e160]:
+              - text: Learn more
+              - img [ref=e161]
+          - link "Seat Reservations Reserve your perfect study spot in advance from multiple campus locations. Learn more" [ref=e163] [cursor=pointer]:
+            - /url: /slot-reservation
+            - img [ref=e165]
+            - heading "Seat Reservations" [level=3] [ref=e168]
+            - paragraph [ref=e169]: Reserve your perfect study spot in advance from multiple campus locations.
+            - generic [ref=e170]:
+              - text: Learn more
+              - img [ref=e171]
+          - link "Smart Canteen Order delicious meals from campus canteens with easy pickup options. Learn more" [ref=e173] [cursor=pointer]:
+            - /url: /student-canteen
+            - img [ref=e175]
+            - heading "Smart Canteen" [level=3] [ref=e177]
+            - paragraph [ref=e178]: Order delicious meals from campus canteens with easy pickup options.
+            - generic [ref=e179]:
+              - text: Learn more
+              - img [ref=e180]
+          - link "Feedback System Share your thoughts and help improve campus facilities and services. Learn more" [ref=e182] [cursor=pointer]:
+            - /url: /feedbacks
+            - img [ref=e184]
+            - heading "Feedback System" [level=3] [ref=e186]
+            - paragraph [ref=e187]: Share your thoughts and help improve campus facilities and services.
+            - generic [ref=e188]:
+              - text: Learn more
+              - img [ref=e189]
+          - link "Events & Workshops Stay updated with upcoming campus events and professional workshops. Learn more" [ref=e191] [cursor=pointer]:
+            - /url: /events
+            - img [ref=e193]
+            - heading "Events & Workshops" [level=3] [ref=e195]
+            - paragraph [ref=e196]: Stay updated with upcoming campus events and professional workshops.
+            - generic [ref=e197]:
+              - text: Learn more
+              - img [ref=e198]
+          - link "Achievements Track your progress and earn recognition for your participation. Learn more" [ref=e200] [cursor=pointer]:
+            - /url: /achievements
+            - img [ref=e202]
+            - heading "Achievements" [level=3] [ref=e205]
+            - paragraph [ref=e206]: Track your progress and earn recognition for your participation.
+            - generic [ref=e207]:
+              - text: Learn more
+              - img [ref=e208]
+      - generic [ref=e211]:
+        - generic [ref=e212]:
+          - heading "Our Impact in Numbers" [level=2] [ref=e213]
+          - paragraph [ref=e214]: Making a difference across the campus community
+        - generic [ref=e215]:
+          - generic [ref=e216]:
+            - img [ref=e218]
+            - generic [ref=e223]: 10,000+
+            - generic [ref=e224]: Active Students
+          - generic [ref=e225]:
+            - img [ref=e227]
+            - generic [ref=e229]: 500+
+            - generic [ref=e230]: Study Sessions
+          - generic [ref=e231]:
+            - img [ref=e233]
+            - generic [ref=e235]: 50+
+            - generic [ref=e236]: Canteen Items
+          - generic [ref=e237]:
+            - img [ref=e239]
+            - generic [ref=e242]: 2,000+
+            - generic [ref=e243]: Seats Available
+      - generic [ref=e244]:
+        - generic [ref=e245]:
+          - heading "How It Works" [level=2] [ref=e246]
+          - paragraph [ref=e247]: Simple steps to get started with Campus Portal
+        - generic [ref=e248]:
+          - generic [ref=e249]:
+            - generic [ref=e250]:
+              - generic [ref=e251]: "1"
+              - img [ref=e253]
+            - heading "Register Account" [level=3] [ref=e255]
+            - paragraph [ref=e256]: Create your student account with your email and student ID.
+          - generic [ref=e257]:
+            - generic [ref=e258]:
+              - generic [ref=e259]: "2"
+              - img [ref=e261]
+            - heading "Explore Services" [level=3] [ref=e263]
+            - paragraph [ref=e264]: Browse through study sessions, book seats, or order food.
+          - generic [ref=e265]:
+            - generic [ref=e267]: "3"
+            - heading "Enjoy Benefits" [level=3] [ref=e268]
+            - paragraph [ref=e269]: Make the most of campus facilities and enhance your student life.
+      - generic [ref=e271]:
+        - generic [ref=e272]:
+          - generic [ref=e273]:
+            - img [ref=e274]
+            - generic [ref=e277]: Testimonials
+          - heading "What Students Say" [level=2] [ref=e278]
+          - paragraph [ref=e279]: Real stories from our campus community
+        - generic [ref=e280]:
+          - generic [ref=e281]:
+            - generic [ref=e282]:
+              - img [ref=e283]
+              - img [ref=e285]
+              - img [ref=e287]
+              - img [ref=e289]
+              - img [ref=e291]
+            - paragraph [ref=e293]: "\"Campus Portal has completely transformed how I manage my study time. The seat reservation system is a lifesaver during exam season!\""
+            - generic [ref=e294]:
+              - img "John Doe" [ref=e295]
+              - generic [ref=e296]:
+                - paragraph [ref=e297]: John Doe
+                - paragraph [ref=e298]: Computer Science, 3rd Year
+          - generic [ref=e299]:
+            - generic [ref=e300]:
+              - img [ref=e301]
+              - img [ref=e303]
+              - img [ref=e305]
+              - img [ref=e307]
+              - img [ref=e309]
+            - paragraph [ref=e311]: "\"The canteen ordering system is amazing! I can order my favorite meals ahead of time and skip the queues.\""
+            - generic [ref=e312]:
+              - img "Jane Smith" [ref=e313]
+              - generic [ref=e314]:
+                - paragraph [ref=e315]: Jane Smith
+                - paragraph [ref=e316]: Engineering, 2nd Year
+          - generic [ref=e317]:
+            - generic [ref=e318]:
+              - img [ref=e319]
+              - img [ref=e321]
+              - img [ref=e323]
+              - img [ref=e325]
+              - img [ref=e327]
+            - paragraph [ref=e329]: "\"Study sessions have helped me connect with peers and improve my grades significantly. Highly recommended!\""
+            - generic [ref=e330]:
+              - img "Mike Wilson" [ref=e331]
+              - generic [ref=e332]:
+                - paragraph [ref=e333]: Mike Wilson
+                - paragraph [ref=e334]: Business, Final Year
+      - generic [ref=e340]:
+        - heading "Ready to Get Started?" [level=2] [ref=e341]
+        - paragraph [ref=e342]: Join thousands of students already using Campus Portal to enhance their academic journey.
+        - generic [ref=e343]:
+          - link "Register Now" [ref=e344] [cursor=pointer]:
+            - /url: /student-register
+          - link "Login to Account" [ref=e345] [cursor=pointer]:
+            - /url: /student-login
+  - contentinfo [ref=e346]:
+    - generic [ref=e347]:
+      - generic [ref=e348]:
+        - generic [ref=e349]:
+          - generic [ref=e350]:
+            - img [ref=e352]
+            - generic [ref=e355]:
+              - heading "Campus Portal" [level=3] [ref=e356]
+              - paragraph [ref=e357]: Student Hub
+          - paragraph [ref=e358]: Your one-stop digital platform for managing study sessions, seat reservations, canteen orders, and feedback. Empowering students to excel in their academic journey.
+          - generic [ref=e359]:
+            - link [ref=e360] [cursor=pointer]:
+              - /url: https://facebook.com
+              - img [ref=e361]
+            - link [ref=e363] [cursor=pointer]:
+              - /url: https://twitter.com
+              - img [ref=e364]
+            - link [ref=e366] [cursor=pointer]:
+              - /url: https://instagram.com
+              - img [ref=e367]
+            - link [ref=e370] [cursor=pointer]:
+              - /url: https://linkedin.com
+              - img [ref=e371]
+            - link [ref=e375] [cursor=pointer]:
+              - /url: https://github.com
+              - img [ref=e376]
+        - generic [ref=e379]:
+          - heading "Quick Links" [level=3] [ref=e380]:
+            - img [ref=e381]
+            - text: Quick Links
+          - list [ref=e383]:
+            - listitem [ref=e384]:
+              - link "Home" [ref=e385] [cursor=pointer]:
+                - /url: /
+                - img [ref=e386]
+                - text: Home
+            - listitem [ref=e389]:
+              - link "About Us" [ref=e390] [cursor=pointer]:
+                - /url: /about
+                - img [ref=e391]
+                - text: About Us
+            - listitem [ref=e393]:
+              - link "Study Sessions" [ref=e394] [cursor=pointer]:
+                - /url: /student-registered-sessions
+                - img [ref=e395]
+                - text: Study Sessions
+            - listitem [ref=e397]:
+              - link "Slot Reservations" [ref=e398] [cursor=pointer]:
+                - /url: /slot-reservation
+                - img [ref=e399]
+                - text: Slot Reservations
+            - listitem [ref=e402]:
+              - link "Smart Canteen" [ref=e403] [cursor=pointer]:
+                - /url: /student-canteen
+                - img [ref=e404]
+                - text: Smart Canteen
+            - listitem [ref=e406]:
+              - link "Feedback" [ref=e407] [cursor=pointer]:
+                - /url: /feedbacks
+                - img [ref=e408]
+                - text: Feedback
+        - generic [ref=e410]:
+          - heading "Get in Touch" [level=3] [ref=e411]:
+            - img [ref=e412]
+            - text: Get in Touch
+          - list [ref=e414]:
+            - listitem [ref=e415]:
+              - img [ref=e416]
+              - generic [ref=e419]: 123 Campus Road, Colombo 07, Sri Lanka
+            - listitem [ref=e420]:
+              - img [ref=e421]
+              - link "support@campusportal.com" [ref=e424] [cursor=pointer]:
+                - /url: mailto:support@campusportal.com
+            - listitem [ref=e425]:
+              - img [ref=e426]
+              - link "+94 11 234 5678" [ref=e428] [cursor=pointer]:
+                - /url: tel:+94123456789
+            - listitem [ref=e429]:
+              - img [ref=e430]
+              - generic [ref=e433]: "Mon - Fri: 8:00 AM - 6:00 PM"
+      - generic [ref=e435]:
+        - generic [ref=e436]:
+          - heading "Stay Updated" [level=3] [ref=e437]:
+            - img [ref=e438]
+            - text: Stay Updated
+          - paragraph [ref=e441]: Subscribe to our newsletter for updates on new sessions, events, and campus news.
+        - generic [ref=e442]:
+          - textbox "Enter your email" [ref=e443]
+          - button "Subscribe" [ref=e444] [cursor=pointer]
+      - generic [ref=e446]:
+        - generic [ref=e447]:
+          - generic [ref=e448]: © 2026 Campus Portal. All rights reserved.
+          - generic [ref=e449]: •
+          - link "Privacy Policy" [ref=e450] [cursor=pointer]:
+            - /url: /privacy
+          - generic [ref=e451]: •
+          - link "Terms of Service" [ref=e452] [cursor=pointer]:
+            - /url: /terms
+          - generic [ref=e453]: •
+          - link "Sitemap" [ref=e454] [cursor=pointer]:
+            - /url: /sitemap
+        - generic [ref=e455]:
+          - generic [ref=e456]: Made with
+          - img [ref=e457]
+          - generic [ref=e459]: for students
+        - button "Back to Top" [ref=e460] [cursor=pointer]:
+          - img [ref=e461]
+          - text: Back to Top
+```
